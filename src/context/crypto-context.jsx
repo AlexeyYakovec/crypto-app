@@ -22,6 +22,7 @@ export function CryptoContextProvider({ children }) {
          setAssets(
             assets.map((asset) => {
                const coin = result.find((c) => c.id === asset.id);
+
                return {
                   grow: asset.price < coin.price, // boolean
                   growPercent: percentDifference(asset.price, coin.price),

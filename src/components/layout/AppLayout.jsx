@@ -12,7 +12,7 @@ export default function AppLayout() {
       return <Spin fullscreen />;
    }
    return (
-      <Layout>
+      <Layout style={{ fontFamily: "Segoe UI" }}>
          <AppHeader />
          <Layout>
             <AppSider />
