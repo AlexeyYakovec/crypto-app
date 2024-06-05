@@ -39,13 +39,15 @@ export default function CoinInfoModal({ coin }) {
                {coin.priceBtc} $
             </Typography.Paragraph>
             <Typography.Paragraph>
-               <Typography.Text strong>Contract Address: </Typography.Text>
+               <Typography.Text strong>Market Cap: </Typography.Text>
                {coin.marketCap}
             </Typography.Paragraph>
-            <Typography.Paragraph>
-               <Typography.Text strong>Price: </Typography.Text>
-               {coin.contractAddress}
-            </Typography.Paragraph>
+            {coin.contractAddress && (
+               <Typography.Paragraph>
+                  <Typography.Text strong>Contract Address: </Typography.Text>
+                  {coin.contractAddress}
+               </Typography.Paragraph>
+            )}
          </>
       </>
    );
